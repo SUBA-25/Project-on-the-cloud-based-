@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Crop Recommendation</title>
+    <link rel="stylesheet" href="al.css">
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gloria&family=Della+Respira&family=Fondamento:ital@0;1&family=Krona+One&family=Playwrite+AU+SA:wght@100..400&family=Rowdies:wght@300;400;700&Varela+Round&family=Teko:wght@300..700&display=swap" rel="stylesheet">    
+</head>
+<body>
+
+    <div class="Home">
+        <div class="header">
+            <div class="profile">
+                <img src="Logo.png" class="logo" alt="">
+                <h2>SmartAgriTech</h2>
+            </div>
+            <ul class="navBar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Water.html">Water</a></li>
+                <li><a href="market.html">Market</a></li>
+                <li><a id="active" href="al.html">AI Crop</a></li>
+            </ul>
+            <div class="login">
+                <a href="Signin.html" id="Signup">Signup</a>
+                <a href="Login.html" id="Login">Login</a>
+            </div>
+
+        </div>
+         <div class="ai-crop-section" id="ai2">
+            <img src="Logo.png" class="logo" alt="">
+            <h2>Your Land</h2>
+            <div class="yourfarm">
+                <h3>Planted &nbsp;&nbsp;&nbsp;: <span id="Plant">Paddy</span></h3>
+                <h3>Soil-Type : <span>Clayey Soil</span> </h3>
+                <h3>Moisture &nbsp;: <span id="moist">60</span>%</h3>
+                <h3>Stage &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="stage">Panicle Initiation to Booting</span></h3>
+            </div>
+            <button id="CalculateYourSelf">Calculate Youself</button>
+        </div> 
+    
+        <section class="ai-crop-section" id="ai1">
+            <img src="Logo.png" class="logo" alt="">
+            <h2>AI-Powered Crop Recommendation</h2>
+            <div class="ai-form">
+                
+                <select name="soilTypes" id="soilTypes" >
+                    <option value="">--Soil Type--</option>
+                    <option value="">Clay</option>
+                    <option value="">Clay</option>
+                    <option value="">Clay</option>
+                    <option value="">Clay</option>
+                    <option value="">Clay</option>
+                </select>
+
+                <label for="rangeInput">Soil Moisture Level: <span id="rangeValue">0</span></label>
+                <input type="range" id="rangeInput" min="0" max="100" value="0">
+                
+                <button onclick="getRecommendation()" id="Rec">Recommend Crop</button>
+            </div>
+            <p id="aiResponse"></p>
+        </section> 
+
+    </div>
+
+
+
+    <!-- AI Crop Recommendation Section -->
+    
+
+    <!-- <script>
+        function getRecommendation() {
+            let soil = document.getElementById("soilType").value;
+            let moisture = document.getElementById("moistureLevel").value;
+        
+            fetch('http://127.0.0.1:5000/recommend', { 
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ soilType: soil, moistureLevel: moisture })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("aiResponse").innerText = "Recommended Crop: " + data.crop;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script> -->
+
+    <script src="ai.js"></script>
+
+</body>
+</html>

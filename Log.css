@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background:none; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c7c7c7;
+}
+
+
+/* Login Page */
+.Page{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(108, 156, 24);
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log{
+    height: 75vh;
+    width: 450px;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Gloria Hallelujah", cursive;
+    padding: 2% 0;
+
+
+}
+.log h1{
+    font-size: 40px;
+    color: green;
+}
+.log h2{
+    font-size: 15px;
+    color: rgb(103, 141, 91);
+}
+.log form{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.log form a{
+    position: relative;
+    left: 60%;
+    padding: 2%;
+    color: rgb(17, 77, 17);
+    font-weight: 700;
+}
+.log form a:hover{
+    color: rgb(72, 171, 72);
+
+}
+.input{
+    width: 85%;
+    height: 12%;
+    margin: 2% 7.5%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.input:focus{
+    outline: none;
+}
+.check{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin: 0 7.5% ;
+    gap: 10px;
+    color: rgb(17, 77, 17);
+}
+.check input{
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    accent-color: green;
+}
+.check label{
+    cursor: pointer;
+    font-weight: 700;
+}
+.log form button{
+    margin: 0 7.5%;
+    height: 12%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Rowdies", serif;
+    font-weight: 300;
+    color: white;
+    background-color: rgb(57, 196, 57);
+    cursor: pointer;
+}
+.sub{
+    margin-top: 30px;
+}
+.for{
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+.for i{
+    font-size: 30px;
+    color: rgb(0, 127, 0);
+    cursor: pointer;
+}
+.for i:hover{
+    color: rgb(61, 162, 61);
+}
+.sign{
+    position: relative;
+    left: 28%;
+    padding: 2%;
+    color: rgb(17, 77, 17);
+    font-weight: 700;
+}
+.sign:hover{
+    color: rgb(72, 171, 72);
+}
+
+#forget-pass{
+    height:60vh;
+}
+#forget-pass h1{
+    font-size: 28px;
+}
+.input2{
+    width: 85%;
+    height: 15%;
+    margin: 2% 7.5%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+#forget-pass label{
+    margin: 2% 7.5%;
+    color: rgb(17, 77, 17);
+}
+#forget-pass button{
+    height: 15%;
+    margin-top: 10px;
+}

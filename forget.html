@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find-Pass</title>
+    <link rel="stylesheet" href="Log.css">
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gloria&family=Della+Respira&family=Fondamento:ital@0;1&family=Krona+One&family=Playwrite+AU+SA:wght@100..400&family=Rowdies:wght@300;400;700&Varela+Round&family=Teko:wght@300..700&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div class="Page" id="forgetPage">
+        <div class="log" id="forget-pass">
+            <h1>Forget Password</h1>
+            <form action="#">
+                <label for="email">Enter Email</label>
+                <input class="input2" type="email" placeholder="Email">
+                <label for="password">Enter Code</label>
+                <input class="input2" type="password" placeholder=" * * * * * *">
+                <button id="openPageBtn">Get In</button>
+            </form>
+            <a class="sign" href="Login.html">Login</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('openPageBtn').addEventListener('click', function() {
+            window.open('Login.html'); 
+        });
+    </script>
+</body>
+</html>
